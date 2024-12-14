@@ -73,7 +73,7 @@ void setup()
   // Since v4.4.x, BearSSL engine was used, the SSL buffer need to be set.
   // Large data transmission may require larger RX buffer, otherwise connection issue or data read time out can be occurred.
   fbdo.setBSSLBufferSize(4096 /* Rx buffer size in bytes from 512 - 16384 */, 1024 /* Tx buffer size in bytes from 512 - 16384 */);
-
+// commti the large changes 
   // Limit the size of response payload to be collected in FirebaseData
   fbdo.setResponseSize(2048);
 
